@@ -1,5 +1,11 @@
 require 'winnow'
 
+DEFAULT_G = 15
+DEFAULT_N = 9
+DEFAULT_arch1 = "examples/alumno1/ejercicio.c"
+DEFAULT_arch2 = "examples/alumno2/ejercicio.c"
+USAGE = "Usage : Winnow [file 1] [file 2] [opt guarantee] [opt noise]" 
+
 class Winnow
 	def initialize(guarantee,noise)
 	    @guarantee = guarantee || 15
